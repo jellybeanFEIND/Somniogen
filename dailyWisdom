@@ -1,0 +1,13 @@
+const wisdom = [
+		"Bonus resistance to psychic damage today. Try it!",
+		"You ever think how crocheting and knitting are just tying a one-dimensional object into a knot until you have a two-dimensional one? Isn't that kinda fucked up?",
+		"get a lil silly w it :3"
+	];
+	
+  //I'm really very bad at this.
+	function getWisdom() {
+		const randomIndex = Math.floor(Math.random() * wisdom.length);
+		return wisdom[randomIndex];
+	}
+	
+	console.log(getWisdom()); //hopefully spits out a sentence from the "wisdom" table, if I did it right.
