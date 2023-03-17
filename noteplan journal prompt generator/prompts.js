@@ -1,4 +1,4 @@
-var prompts = [
+const prompts = [
 "What was your favorite mundane moment of the day?",
 "What was the best thing you've eaten this week?",
 "What, in your home, are you gareful for?",
@@ -127,3 +127,9 @@ var prompts = [
 
 
 ];
+function getRandomPrompt() {
+  const index = Math.floor(Math.random() * prompts.length);
+  return prompts[index];
+}
+
+console.log(getRandomPrompt());
